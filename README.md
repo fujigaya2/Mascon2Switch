@@ -10,7 +10,7 @@ https://seesaawiki.jp/fujigaya2/d/Mascon2kbd
 
 
 
-##使用しているライブラリ（Copy済み）  
+## 使用しているライブラリ（Copy済み）  
 ・Switch Control Library（V2.0.0)  
 https://github.com/celclow/SwitchControlLibrary
 
