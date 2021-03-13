@@ -6,8 +6,34 @@ https://seesaawiki.jp/fujigaya2/d/Mascon2kbd
 現在、作り途中。  
 操作タイプはスタンダードを想定  
 
- 
+・arduinostl.hを入れる必要あり。  
+・Boards.txtを一部変更する。
+(Arduinoがインストールされたディレクトリ)/hardware/arduino/avr/boards.txtを開き
 
+leonardo.vid.1=0x0f0d
+leonardo.pid.1=0x0092
+・・・
+leonardo.build.vid=0x0f0d
+leonardo.build.pid=0x0092
+と変更しておきます。（理由は知りません）
+
+操作は、
+
+電車でGoコントローラは
+１．マスコンノッチ
+２．Select
+３．Start　→　Xボタン
+４．A　→　Yボタン
+５，B　→　Bボタン
+６，C　→　Aボタン
+のノッチ＋５ボタンしかなく、おそらく、これだけだとメニュー操作が出来なさそうなので、
+
+Selectを押しながら
+上：Start
+左：Aボタン
+下：Bボタン
+右：Cボタン
+と操作できるようにした。
 
 
 ## 使用しているライブラリ（Copy済み）  
