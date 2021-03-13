@@ -1,15 +1,12 @@
 # Mascon2Switch
  電車でGoマスコンをスイッチに繫ぐときのスケッチ
-
-ハード図面は
-
-https://seesaawiki.jp/fujigaya2/d/Mascon2kbd
-
-を流用。
-
-現在、作り途中。
-
- 操作タイプはスタンダード
+	ハード図面は
+	https://seesaawiki.jp/fujigaya2/d/Mascon2kbd
+	を流用。
+	現在、作り途中。
+	 操作タイプはスタンダードを想定
+ 
+ 
 
 
 
