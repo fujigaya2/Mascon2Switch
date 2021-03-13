@@ -11,12 +11,12 @@ https://www.arduinolibraries.info/libraries/arduino-stl
 ・Boards.txtを一部変更する。
 (Arduinoがインストールされたディレクトリ)/hardware/arduino/avr/boards.txtを開き
 
-leonardo.vid.1=0x0f0d
-leonardo.pid.1=0x0092
-・・・
-leonardo.build.vid=0x0f0d
-leonardo.build.pid=0x0092
-と変更しておきます。（理由は知りません）
+leonardo.vid.1=0x0f0d  
+leonardo.pid.1=0x0092  
+・・・  
+leonardo.build.vid=0x0f0d  
+leonardo.build.pid=0x0092  
+と変更しておきます。（理由は知りません）  
 
 操作は、  
 
