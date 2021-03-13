@@ -10,8 +10,8 @@ https://seesaawiki.jp/fujigaya2/d/Mascon2kbd
 
 
 
-使用しているライブラリ（Copy済み）
-・Switch Control Library（V2.0.0)
+##使用しているライブラリ（Copy済み）  
+・Switch Control Library（V2.0.0)  
 https://github.com/celclow/SwitchControlLibrary
 
 MIT License
@@ -36,7 +36,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-・PSX Controller Decoder Library (DenshaMascon.cpp)
+・PSX Controller Decoder Library (DenshaMascon.cpp)  
 	Written by: Kevin Ahrendt June 22nd, 2008
 	Modified by: Yaasan / Desktop Station Dec 15, 2015
 	
