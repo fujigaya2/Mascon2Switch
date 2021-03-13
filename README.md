@@ -6,7 +6,8 @@ https://seesaawiki.jp/fujigaya2/d/Mascon2kbd
 現在、作り途中。  
 操作タイプはスタンダードを想定  
 
-・arduinostl.hを入れる必要あり。  
+・arduinostlライブラリを入れる必要あり。 
+https://www.arduinolibraries.info/libraries/arduino-stl  
 ・Boards.txtを一部変更する。
 (Arduinoがインストールされたディレクトリ)/hardware/arduino/avr/boards.txtを開き
 
