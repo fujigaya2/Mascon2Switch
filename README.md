@@ -10,9 +10,9 @@
 
 
 
-使用しているライブラリ（Copy済み）
-・Switch Control Library（V2.0.0)
- https://github.com/celclow/SwitchControlLibrary
+	使用しているライブラリ（Copy済み）
+	・Switch Control Library（V2.0.0)
+	https://github.com/celclow/SwitchControlLibrary
 
 MIT License
 
