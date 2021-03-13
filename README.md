@@ -1,18 +1,18 @@
 # Mascon2Switch
- 電車でGoマスコンをスイッチに繫ぐときのスケッチ
-	ハード図面は
-	https://seesaawiki.jp/fujigaya2/d/Mascon2kbd
-	を流用。
-	現在、作り途中。
-	 操作タイプはスタンダードを想定
+　電車でGoマスコンをスイッチに繫ぐときのスケッチ　　
+ハード図面は　　
+https://seesaawiki.jp/fujigaya2/d/Mascon2kbd　　
+を流用。　　
+現在、作り途中。　　
+操作タイプはスタンダードを想定　　
+
  
- 
 
 
 
-	使用しているライブラリ（Copy済み）
-	・Switch Control Library（V2.0.0)
-	https://github.com/celclow/SwitchControlLibrary
+使用しているライブラリ（Copy済み）
+・Switch Control Library（V2.0.0)
+https://github.com/celclow/SwitchControlLibrary
 
 MIT License
 
