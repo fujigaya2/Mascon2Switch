@@ -60,6 +60,7 @@ void setup()
   SwitchControlLibrary();
 
   button_release();
+  SwitchControlLibrary().moveLeftStick(128, 128);
   SwitchControlLibrary().moveRightStick(128, 128);
 
 }
@@ -68,7 +69,7 @@ void loop()
 {
   // put your main code here, to run repeatedly:
   //Joystick
-  if( (millis() - gPreviousL5) >= 50)
+  if( (millis() - gPreviousL5) >= 25)
   {
     //Read joystick Status 
     aPsxData = Joystick.read();
@@ -88,7 +89,7 @@ void loop()
   //buttonの確認
   if( (millis() - gPreviousL6) >= gPreviousL6_wait)
   {
-    gPreviousL6_wait = 50;
+    gPreviousL6_wait = 25;
 
     button_release();
     
@@ -205,90 +206,105 @@ void loop()
   #endif
           SwitchControlLibrary().pressButton(Button::ZL);
           SwitchControlLibrary().moveLeftStick(128, 128 - 16 * 8);
+          SwitchControlLibrary().moveRightStick(128 + 16 * 8 - 1,128);
           break;
         case -8://B8
   #if defined(USB_SERIAL_ENABLE)
           Serial.println("128 - 16 * 8 Stick On.");
   #endif
           SwitchControlLibrary().moveLeftStick(128, 128 - 16 * 8);// 左スティックは上のほう
+          SwitchControlLibrary().moveRightStick(128 + 16 * 8 - 1,128);
           break;
         case -7://B7
   #if defined(USB_SERIAL_ENABLE)
           Serial.println("128 - 16 * 7 Stick On.");
   #endif
           SwitchControlLibrary().moveLeftStick(128, 128 - 16 * 7); // 左スティックは上のほう
+          SwitchControlLibrary().moveRightStick(128 + 16 * 7,128);
           break;
         case -6://B6
   #if defined(USB_SERIAL_ENABLE)
           Serial.println("128 - 16 * 6 Stick On.");
   #endif
           SwitchControlLibrary().moveLeftStick(128, 128 - 16 * 6); // 左スティックは上のほう
+          SwitchControlLibrary().moveRightStick(128 + 16 * 6,128);
           break;
         case -5://B5
   #if defined(USB_SERIAL_ENABLE)
           Serial.println("128 - 16 * 5 Stick On.");
   #endif
           SwitchControlLibrary().moveLeftStick(128, 128 - 16 * 5); // 左スティックは上のほう
+          SwitchControlLibrary().moveRightStick(128 + 16 * 5,128);
           break;
         case -4://B4
   #if defined(USB_SERIAL_ENABLE)
           Serial.println("128 - 16 * 4.5 Stick On.");
   #endif
           SwitchControlLibrary().moveLeftStick(128, 128 - 16 * 4.5); // 左スティックは上のほう
+          SwitchControlLibrary().moveRightStick(128 + 16 * 4.5,128);
           break;
         case -3://B3
   #if defined(USB_SERIAL_ENABLE)
           Serial.println("128 - 16 * 4 Stick On.");
   #endif
           SwitchControlLibrary().moveLeftStick(128, 128 - 16 * 4); // 左スティックは上のほう
+          SwitchControlLibrary().moveRightStick(128 + 16 * 4,128);
           break;
         case -2://B2//調整
   #if defined(USB_SERIAL_ENABLE)
           Serial.println("128 - 16 * 3 Stick On.");
   #endif
           SwitchControlLibrary().moveLeftStick(128, 128 - 16 * 3); // 左スティックは上のほう
+          SwitchControlLibrary().moveRightStick(128 + 16 * 3,128);
           break;
         case -1://B1//調整
   #if defined(USB_SERIAL_ENABLE)
           Serial.println("128 - 16 * 2 Stick On.");
   #endif
           SwitchControlLibrary().moveLeftStick(128, 128 - 16 * 2); // 左スティックは上のほう
+          SwitchControlLibrary().moveRightStick(128 + 16 * 2,128);
           break;
         case 0://N
   #if defined(USB_SERIAL_ENABLE)
           Serial.println("128 Stick On.");
   #endif
           SwitchControlLibrary().moveLeftStick(128, 128); // 左スティックは真ん中
+          SwitchControlLibrary().moveRightStick(128,128);
           break;
         case 1://P1 //値調整
   #if defined(USB_SERIAL_ENABLE)
           Serial.println("128 + 25 * 1.5 Stick On.");
   #endif
           SwitchControlLibrary().moveLeftStick(128, 128 + 25 * 1.5); // 左スティックは下のほう
+          SwitchControlLibrary().moveRightStick(128,128);
           break;
         case 2://P2
   #if defined(USB_SERIAL_ENABLE)
           Serial.println("128 + 25 * 2 Stick On.");
   #endif
           SwitchControlLibrary().moveLeftStick(128, 128 + 25 * 2); // 左スティックは下のほう
+          SwitchControlLibrary().moveRightStick(128,128);
           break;
         case 3://P3
   #if defined(USB_SERIAL_ENABLE)
           Serial.println("128 + 25 * 3 Stick On.");
   #endif
           SwitchControlLibrary().moveLeftStick(128, 128 + 25 * 3); // 左スティックは下のほう
+          SwitchControlLibrary().moveRightStick(128,128);
           break;
         case 4://P4
   #if defined(USB_SERIAL_ENABLE)
           Serial.println("128 + 25 * 4 Stick On.");
   #endif
           SwitchControlLibrary().moveLeftStick(128, 128 + 25 * 4); // 左スティックは上のほう
+          SwitchControlLibrary().moveRightStick(128,128);
           break;
         case 5://P5
   #if defined(USB_SERIAL_ENABLE)
           Serial.println("128 + 25 * 5 Stick On.");
   #endif
           SwitchControlLibrary().moveLeftStick(128, 128 + 25 * 5); // 左スティックは下のほう
+          SwitchControlLibrary().moveRightStick(128,128);
           break;
         default:
           break;
