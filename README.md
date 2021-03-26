@@ -1,32 +1,18 @@
 # Mascon2Switch
-　電車でGoマスコンをスイッチに繫ぐときのスケッチ  
- ハード図面は  
-https://seesaawiki.jp/fujigaya2/d/Mascon2kbd  
-を流用。  
-現在、作り途中。  
-操作タイプはスタンダードを想定  
+## 電車でGoマスコンをスイッチに繫ぐときのスケッチ  
+- <https://tangential-star.hatenablog.jp/entry/20201107/1604761008>に従って、IDE,STL,SwitchControlLibraryをインストール
+- Arduino pro micro使用。ただし、ボードはLeonardoを選んでおく。
+- <https://github.com/fujigaya2/PSCon2Switch/blob/main/schematic.png>のようにつなげば、動くたぶん。
+- ボードがうまく書き込めていれば、windowsのデバイスマネージャで、<https://github.com/fujigaya2/PSCon2Switch/blob/main/device.jpg>のようなVID,PIDで見えるはず。
+- こんなボードにして動いている。<https://seesaawiki.jp/fujigaya2/d/Mascon2kbd> 
 
-・arduinoSTLライブラリを入れる必要あり。  
-https://www.arduinolibraries.info/libraries/arduino-stl  
-・Boards.txtを一部変更する。
-(Arduinoがインストールされたディレクトリ)/hardware/arduino/avr/boards.txtを開き
-
-leonardo.vid.1=0x0f0d  
-leonardo.pid.1=0x0092  
-・・・  
-leonardo.build.vid=0x0f0d  
-leonardo.build.pid=0x0092  
-と変更しておきます。（理由は知りません）  
-
-操作は、  
-
-電車でGoコントローラは  
-１．マスコンノッチ  
-２．Select  
-３．Start　→　Xボタン  
-４．A　→　Yボタン  
-５，B　→　Bボタン  
-６，C　→　Aボタン  
+- 電車でGoコントローラ操作は、  
+1.マスコンノッチ  
+2.Select  
+3.Start　→　Xボタン  
+4.A　→　Yボタン  
+5.B　→　Bボタン  
+6.C　→　Aボタン  
 のノッチ＋５ボタンしかなく、おそらく、これだけだとメニュー操作が出来なさそうなので、  
 
 Selectを押しながらの時の操作は  
